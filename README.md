@@ -1,11 +1,11 @@
 Github info
 
-run
-mvn install
+run<br>
+mvn install<br>
 java -jar target/*.jar
 
-example
+example<br>
 http://localhost:8080/repos/marczakx
 
-OpenAPI (swagger)
+OpenAPI (swagger)<br>
 http://localhost:8080/swagger-ui/index.html
