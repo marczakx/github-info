@@ -1,5 +1,6 @@
 package marczakx.githubinfo.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import marczakx.githubinfo.service.RepoService;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin
 public class GithubInfoController {
 	private final RepoService repoService;
 	  
@@ -20,4 +22,5 @@ public class GithubInfoController {
 	  public List<RepoView> getReposView(@PathVariable String user) throws AttributeNotFoundException {
 		  return repoService.getReposView(user);
 	  } 
+	  
 }
